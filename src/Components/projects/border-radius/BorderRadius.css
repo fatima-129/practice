@@ -1,0 +1,25 @@
+.container {
+  width: 100vw;
+  height: 140vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: rgb(122, 62, 62);
+  gap: 20px;
+}
+
+.box {
+  width: 40vw;
+  height: 60vh;
+  background-color: orange;
+}
+.input_container {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+  gap: 15px;
+}
+input {
+  width: 25%;
+}

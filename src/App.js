@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./Components/home/Home";
+import BinaryToDecimal from "./Components/projects/BinaryToDecimal";
+import BorderRadius from "./Components/projects/border-radius/BorderRaduis";
+import BorderRaduis from "./Components/projects/border-radius/BorderRaduis";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/binary-to-decimal" element={<BinaryToDecimal />} />
+          <Route path="/border-radius-preview" element={<BorderRadius />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
